@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "e764ad10-1f84-4d47-9ed3-7391fd57f357",
+		"name": "AIR projekt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24865414"
+	},
+	"item": [
+		{
+			"name": "All users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/GetAll?ObjectsType=users",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"GetAll"
+					],
+					"query": [
+						{
+							"key": "ObjectsType",
+							"value": "users"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/GetAll?ObjectsType=devices",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"GetAll"
+					],
+					"query": [
+						{
+							"key": "ObjectsType",
+							"value": "devices"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/GetAll?ObjectsType=events",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"GetAll"
+					],
+					"query": [
+						{
+							"key": "ObjectsType",
+							"value": "events"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "One device",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/GetOne?id=6&ObjectType=device",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"GetOne"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						},
+						{
+							"key": "ObjectType",
+							"value": "device"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "One event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/GetOne?id=1&ObjectType=event",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"GetOne"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "ObjectType",
+							"value": "event"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unique email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/UniqueEmail?email=ihorvat@gmail.com",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"UniqueEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "ihorvat@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login zahtjev",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/LoginRequest?email=ihorvat@gmail.com&password=admin1",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"LoginRequest"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "ihorvat@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "admin1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add device",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lat\": 0,\r\n  \"long\": 0,\r\n  \"stock\": 0,\r\n  \"price\": 0,\r\n  \"active\": true\r\n}"
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/AddDevice",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"AddDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"string\",\r\n  \"last_name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"password\": \"string\",\r\n  \"role_id\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/AddUser",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"AddUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add role",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/AddRole?description=NewRole",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"AddRole"
+					],
+					"query": [
+						{
+							"key": "description",
+							"value": "NewRole"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/AddLogin?user_id=1&date_time=12.05.2022",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"AddLogin"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "date_time",
+							"value": "12.05.2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": 2,\r\n  \"device_id\": 8,\r\n  \"date_time\": \"2023-06-26T17:04:30.147Z\"\r\n}"
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/AddEvent",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"AddEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lat\": 0,\r\n  \"long\": 0,\r\n  \"stock\": 0,\r\n  \"price\": 0,\r\n  \"active\": true\r\n}"
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/UpdateDevice?id=7",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"UpdateDevice"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"first_name\": \"string\",\r\n  \"last_name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"password\": \"string\",\r\n  \"role_id\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/UpdateUser?id=3",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"UpdateUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_id\": 3,\r\n  \"device_id\": 1,\r\n  \"date_time\": \"2023-06-26T17:08:10.584Z\"\r\n}"
+				},
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine/UpdateEvent?id=12",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine",
+						"UpdateEvent"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete device",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine?id=11&ForDelete=device",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "11"
+						},
+						{
+							"key": "ForDelete",
+							"value": "device"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine?id=46&ForDelete=user",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "46"
+						},
+						{
+							"key": "ForDelete",
+							"value": "user"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete role",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine?id=11&ForDelete=role",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "11"
+						},
+						{
+							"key": "ForDelete",
+							"value": "role"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete login",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine?id=20&ForDelete=login",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "20"
+						},
+						{
+							"key": "ForDelete",
+							"value": "login"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete event",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://air2218.mobilisis.hr/api/api/VendingMachine?id=30&ForDelete=event",
+					"protocol": "https",
+					"host": [
+						"air2218",
+						"mobilisis",
+						"hr"
+					],
+					"path": [
+						"api",
+						"api",
+						"VendingMachine"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "30"
+						},
+						{
+							"key": "ForDelete",
+							"value": "event"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
